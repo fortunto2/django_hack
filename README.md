@@ -11,7 +11,7 @@ virtualenv venv -p python3
 source venv/bin activate
 
 #ставим зависимости
-pip install -r
+pip install -r requeriments.txt
 
 ```
 
