@@ -28,7 +28,7 @@ class Comment(models.Model):
     author = models.ForeignKey('auth.User')
     text = models.TextField()
 
-    post = models.ForeignKey('Post', blank=True, null=True)
+    post = models.ForeignKey('Post', blank=True, null=True, related_name='comment')
 
     created_date = models.DateTimeField(
             default=timezone.now)
